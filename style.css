@@ -1,0 +1,637 @@
+:root {
+  --red: #c43b39;
+  --orange: #f6723a;
+  --cream: #fadac1;
+  --lightblue: #50a3ab;
+  --darkblue: #1d313c;
+  --shadow: 0 5px 5px rgb(0 0 0/0.5);
+  --purple: #590780;
+  --salem: #fadef7;
+  --gold: #e5b80b;
+  --darkpurple: #301934;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/hero-fixed.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Andaluzia Personal Use", sans-serif;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero h4 {
+  font-size: 2rem;
+  font-family: "Overpass", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.hero .line {
+  display: inline-block;
+  width: 8rem;
+  height: 2px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--gold);
+  vertical-align: middle;
+}
+.hero p {
+  font-size: 2.4rem;
+  font-family: "Tangerine", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.mynavbar {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(48, 25, 52, 0.8);
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  mix-blend-mode: lighten;
+  text-shadow: var(--shadow);
+}
+
+.mynavbar .nav-link {
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: whitesmoke;
+  mix-blend-mode: lighten;
+}
+
+.home {
+  background-image: url(img/home-tangled-fixed-4.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.home p {
+  font-family: "Overpass", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+  font-style: italic;
+  padding-top: 5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.home h2,
+.home p {
+  text-shadow: var(--shadow);
+}
+.home button {
+  max-width: max-content;
+
+  box-shadow: var(--shadow);
+  padding-top: 1rem;
+  color: var(--darkpurple);
+  background-color: var(--gold);
+}
+
+.home a:hover {
+  color: var(--gold);
+  background-color: var(--darkpurple);
+}
+.home button:hover {
+  color: var(--gold);
+  background-color: var(--darkpurple);
+}
+.button-container {
+  display: block;
+  position: relative;
+}
+
+.home2 {
+  background-image: url(img/home2-bg.png);
+  margin-top: -63px;
+  background-position: center;
+  display: none;
+  min-height: 100vh;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  border-bottom: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+#home2container {
+  animation: home2reveal 2s ease;
+}
+
+.home2 h2 {
+  font-family: "Tangerine", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.home2 p {
+  font-family: "Overpass", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: justify;
+  font-size: 2rem;
+  font-style: italic;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.home2 h2,
+.home2 p {
+  text-shadow: var(--shadow);
+}
+.info {
+  background-image: url(img/info-fullgold.png);
+  background-position: center;
+  display: none;
+  color: var(--cream);
+  padding-top: 4rem;
+  border-bottom: 6px solid rgba(255, 255, 255, 0.3);
+}
+
+.info h2 {
+  font-family: "Tangerine", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #cb60b3 0%,
+    #c146a1 50%,
+    #a80077 61%,
+    #db36a4 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  text-shadow: var(--shadow);
+}
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: var(--darkpurple) !important;
+  font-size: 1.2rem;
+  border: 1px solid var(--darkpurple);
+  height: 13rem;
+  box-shadow: var(--shadow);
+}
+.info .card-body {
+  font-size: 25px;
+  font-family: "Overpass", sans-serif;
+}
+.info h3-2,
+.info h3 {
+  font-size: 30px;
+  font-family: "Tangerine", cursive;
+}
+.info i1,
+.info span1 {
+  border-right: 2px solid var(--darkblue);
+}
+.info i2,
+.info span2 {
+  border-left: 2px solid var(--darkblue);
+}
+.info p {
+  font-size: 12px;
+}
+.info a {
+  box-shadow: var(--shadow);
+  color: var(--gold);
+  background-color: var(--darkpurple);
+  margin-top: 1rem;
+}
+.info a:hover {
+  color: var(--darkpurple);
+  background-color: var(--gold);
+}
+
+.info .card-header {
+  border-bottom: 1px solid var(--darkpurple);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.countdown {
+  display: none;
+  padding-top: 5rem;
+  background-image: url(img/countdown-bg.png);
+  background-position: center;
+  border-bottom: 6px solid rgba(255, 255, 255, 0.4);
+}
+.countdown h2 {
+  font-family: "Tangerine", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  text-shadow: var(--shadow);
+  margin-top: -1rem;
+}
+.countdown .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: var(--darkblue) !important;
+  border: 1px solid #999;
+  height: 160px;
+  box-shadow: var(--shadow);
+  margin-bottom: 5rem;
+}
+.simply-countdown {
+  overflow: hidden;
+  display: table;
+  margin: auto;
+}
+.simply-countdown > .simply-section {
+  color: #1d313c;
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 15px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    #f9b813 1%,
+    #fceabb 36%,
+    #f9da89 53%,
+    #fccd4d 59%,
+    #f8b500 100%,
+    #fbdf93 100%,
+    #f8b500 100%
+  );
+  box-shadow: 0 5px 5px rgb(0 0 0/0.5);
+  border-radius: 10%;
+}
+.simply-countdown > .simply-section .simply-amount {
+  display: block;
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+}
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.rsvp {
+  display: none;
+  padding-top: 5rem;
+  background-image: url(img/info-fullgold.png);
+  padding-bottom: 5rem;
+  border-bottom: 6px solid rgba(255, 255, 255, 0.3);
+}
+.rsvp h2 {
+  font-family: "Tangerine", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #cb60b3 0%,
+    #c146a1 50%,
+    #a80077 61%,
+    #db36a4 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 6rem;
+  text-shadow: var(--shadow);
+  margin-top: -1rem;
+}
+.rsvp p {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+  color: var(--darkpurple);
+}
+.rsvp form label {
+  color: var(--darkpurple);
+}
+.rsvp button {
+  box-shadow: var(--shadow);
+  color: var(--gold);
+  background-color: var(--darkpurple);
+  border: 1px solid black;
+}
+.rsvp button:hover {
+  color: var(--darkpurple);
+  background-color: var(--gold);
+  border: 1px solid black;
+}
+
+.gallery {
+  display: none;
+  padding-top: 5rem;
+  background-image: url(img/gallery-bg.png);
+  padding-bottom: 5rem;
+  border-bottom: 6px solid rgba(255, 255, 255, 0.3);
+}
+.gallery h2 {
+  font-family: "Tangerine", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #fceabb 0%,
+    #f9b811 67%,
+    #f8b500 80%,
+    #f8b500 80%,
+    #fbdf93 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 6rem;
+  text-shadow: var(--shadow);
+  margin-top: -1rem;
+}
+.gallery p {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+footer {
+  background-color: var(--darkpurple);
+  padding: 3rem;
+  padding-bottom: 2 rem;
+  color: var(--gold);
+  display: none;
+}
+footer a {
+  color: var(--gold);
+  font-weight: bold;
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--salem);
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+footer ul {
+  padding-right: 2rem;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  display: none;
+}
+
+@keyframes home2reveal {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .info .card {
+    height: 14rem;
+  }
+  .info .card-body {
+    font-size: 16px;
+  }
+  .info i1,
+  .info span1 {
+    border-right: 2px solid var(--darkblue);
+  }
+  .info i2,
+  .info span2 {
+    border-left: 2px solid var(--darkblue);
+  }
+  .info h3,
+  .info h3-2 {
+    font-size: 20px;
+  }
+  .info p {
+    font-size: 10px;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .mynavbar .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .mynavbar .navbar-brand,
+  .mynavbar .offcanvas-title {
+    font-size: 2rem;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .home {
+    padding-top: 20rem;
+  }
+  .home2 {
+    margin-top: -45px;
+  }
+  .home2 p {
+    font-size: 1.7rem;
+  }
+  .info {
+    padding-top: 7rem;
+  }
+  .info .card {
+    height: 22rem;
+  }
+  .info .card-body {
+    font-size: 15px;
+  }
+  .info span1 {
+    border-bottom: 1px solid var(--darkblue) !important;
+    margin-bottom: 1rem;
+  }
+  .info i2 {
+    border-top: 1px solid var(--darkblue) !important;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+  }
+  .info i1,
+  .info span1 {
+    border-right: none !important;
+  }
+  .info i2,
+  .info span2 {
+    border-left: none !important;
+  }
+  .info i1 {
+    margin-bottom: -1rem;
+  }
+  .info h3,
+  .info h3-2 {
+    font-size: 30px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .simply-countdown > .simply-section {
+    padding: 13px;
+    margin: 5px;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 10px;
+  }
+  .countdown .card {
+    height: 85px;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
